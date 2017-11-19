@@ -79,8 +79,8 @@
     return self;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
     if ([self.previewItem respondsToSelector:@selector(remoteUrl)]
         && [(id <AMPPreviewItem>)self.previewItem remoteUrl]) {
